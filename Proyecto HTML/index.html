@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechStore Online - Tu tienda de tecnología favorita">
+    <title>TechStore Online - Inicio</title>
+    <base href="./">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>TechStore</h1>
+        </div>
+        
+        <form action="productos.html" method="GET">
+            <input type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-promocional">
+            <figure>
+                <img src="img/banner-auriculares.jpg" alt="Auriculares Inalámbricos SoundPro X1">
+                <figcaption>Presentamos los nuevos SoundPro X1 de alta fidelidad.</figcaption>
+            </figure>
+            <h1>Auriculares Inalámbricos SoundPro X1</h1>
+            <p>Sonido premium, cancelación de ruido y hasta 30 horas de batería.</p>
+            <a href="producto.html"><button type="button">Comprar ahora</button></a>
+        </section>
+
+        <section class="categorias-destacadas">
+            <h2>Categorías Destacadas</h2>
+            <nav>
+                <article>
+                    <h3>Laptops</h3>
+                    <p>Equipos portátiles para trabajo, estudio y gaming.</p>
+                    <a href="productos.html?categoria=laptops">Ver Laptops</a>
+                </article>
+                <article>
+                    <h3>Smartphones</h3>
+                    <p>Los últimos dispositivos móviles del mercado.</p>
+                    <a href="productos.html?categoria=smartphones">Ver Smartphones</a>
+                </article>
+                <article>
+                    <h3>Accesorios</h3>
+                    <p>Complementos perfectos para potenciar tu productividad.</p>
+                    <a href="productos.html?categoria=accesorios">Ver Accesorios</a>
+                </article>
+                <article>
+                    <h3>Gaming</h3>
+                    <p>Consolas, componentes y periféricos de alto rendimiento.</p>
+                    <a href="productos.html?categoria=gaming">Ver Gaming</a>
+                </article>
+            </nav>
+        </section>
+
+        <section class="productos-destacados">
+            <h2>Productos Destacados</h2>
+            
+            <article class="producto-tarjeta">
+                <header>
+                    <h3>Smartphone Galaxy A54 5G</h3>
+                </header>
+                <img src="img/galaxy-a54.jpg" alt="Smartphone Galaxy A54 5G">
+                <p>Pantalla Super AMOLED y cámara de 50 MP.</p>
+                <footer>
+                    <p>Precio: <strong>$409.900</strong></p>
+                    <p>Oferta: <mark>15% OFF</mark></p>
+                    <p>Disponibilidad: En Stock</p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header>
+                    <h3>Laptop Lenovo IdeaPad 3</h3>
+                </header>
+                <img src="img/ideapad-3.jpg" alt="Laptop Lenovo IdeaPad 3">
+                <p>Procesador AMD Ryzen 5 y 8GB de RAM.</p>
+                <footer>
+                    <p>Precio: <strong>$699.900</strong></p>
+                    <p>Disponibilidad: Pocas Unidades</p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header>
+                    <h3>Auriculares Sony WH-CH720N</h3>
+                </header>
+                <img src="img/sony-ch720n.jpg" alt="Auriculares Sony WH-CH720N">
+                <p>Cancelación de ruido e inalámbricos con gran autonomía.</p>
+                <footer>
+                    <p>Precio: <strong>$199.900</strong></p>
+                    <p>Oferta: <mark>20% OFF</mark></p>
+                    <p>Disponibilidad: En Stock</p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header>
+                    <h3>Smartwatch Xiaomi Watch 2</h3>
+                </header>
+                <img src="img/xiaomi-watch2.jpg" alt="Smartwatch Xiaomi Watch 2">
+                <p>Monitoreo de salud inteligente y GPS integrado.</p>
+                <footer>
+                    <p>Precio: <strong>$159.900</strong></p>
+                    <p>Disponibilidad: Agotado</p>
+                    <button type="button" disabled>Agotado</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header>
+                    <h3>Control Xbox Series X/S</h3>
+                </header>
+                <img src="img/control-xbox.jpg" alt="Control Xbox Series X/S Robot White">
+                <p>Diseño ergonómico y máxima compatibilidad inalámbrica.</p>
+                <footer>
+                    <p>Precio: <strong>$74.900</strong></p>
+                    <p>Disponibilidad: En Stock</p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header>
+                    <h3>Echo Dot 5ta Gen</h3>
+                </header>
+                <img src="img/echo-dot5.jpg" alt="Echo Dot 5ta Generación">
+                <p>Bocina inteligente con asistente de voz Alexa.</p>
+                <footer>
+                    <p>Precio: <strong>$49.990</strong></p>
+                    <p>Oferta: <mark>10% OFF</mark></p>
+                    <p>Disponibilidad: En Stock</p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header>
+                    <h3>Teclado Mecánico Logitech G Pro</h3>
+                </header>
+                <img src="img/teclado-gpro.jpg" alt="Teclado Mecánico Logitech G Pro">
+                <p>Switches táctiles compactos para gaming profesional.</p>
+                <footer>
+                    <p>Precio: <strong>$129.900</strong></p>
+                    <p>Disponibilidad: En Stock</p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header>
+                    <h3>Monitor LG UltraGear 24"</h3>
+                </header>
+                <img src="img/monitor-lg.jpg" alt="Monitor LG UltraGear 24 pulgadas">
+                <p>Frecuencia de actualización de 144Hz y 1ms de respuesta.</p>
+                <footer>
+                    <p>Precio: <strong>$249.900</strong></p>
+                    <p>Disponibilidad: Última unidad</p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p>Contacto de soporte: <a href="mailto:soporte@techstore.com">soporte@techstore.com</a></p>
+            <p>Dirección: Av. Principal N° 123, Santo Domingo, RD.</p>
+        </address>
+        <p><small>&copy; 2026 TechStore. Todos los derechos reservados.</small></p>
+    </footer>
+
+</body>
+</html>

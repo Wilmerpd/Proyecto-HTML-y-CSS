@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore Online - Contáctanos</title>
+</head>
+<body>
+
+    <header>
+        <h1>TechStore - Formulario de Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacto-seccion">
+            <h2>Envíanos un Mensaje</h2>
+            <p>Completa el siguiente formulario para registrar una solicitud de soporte técnico corporativo o consultas.</p>
+
+            <form action="envio.html" method="POST" enctype="multipart/form-data">
+                
+                <p>
+                    <label for="nombre-completo">Nombre Completo:</label>
+                    <input type="text" id="nombre-completo" name="nombre" placeholder="Juan Pérez" required autocomplete="name">
+                </p>
+
+                <p>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="email" placeholder="ejemplo@correo.com" required autocomplete="email">
+                </p>
+
+                <p>
+                    <label for="clave">Código de Cuenta (Contraseña Temporal):</label>
+                    <input type="password" id="clave" name="password" required placeholder="Mínimo 8 caracteres">
+                </p>
+
+                <p>
+                    <label for="telefono">Teléfono de Contacto:</label>
+                    <input type="tel" id="telefono" name="tel" placeholder="809-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </p>
+
+                <p>
+                    <label for="cantidad">Cantidad de Equipos a Cotizar:</label>
+                    <input type="number" id="cantidad" name="cantidad_equipos" min="1" max="100" step="1" value="1">
+                </p>
+
+                <p>
+                    <label for="fecha-nacimiento">Fecha de Nacimiento (Validación):</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha_nac">
+                </p>
+
+                <p>
+                    <label for="fecha-cita">Seleccione Fecha y Hora para Reunión:</label>
+                    <input type="datetime-local" id="fecha-cita" name="cita_reunion">
+                </p>
+
+                <p>
+                    <label for="nivel-satisfaccion">Prioridad de Atención (Nivel de Urgencia):</label>
+                    <input type="range" id="nivel-satisfaccion" name="prioridad" min="1" max="5">
+                </p>
+
+                <p>
+                    <label for="adjunto">Adjuntar Capturas del Fallo del Dispositivo (Múltiple):</label>
+                    <input type="file" id="adjunto" name="archivos_adjuntos" multiple>
+                </p>
+
+                <p>
+                    <label for="sitio-web">Tu Sitio Web Corporativo (URL):</label>
+                    <input type="url" id="sitio-web" name="url_empresa" placeholder="https://tuempresa.com">
+                </p>
+
+                <fieldset>
+                    <legend>Tipo de Solicitud</legend>
+                    <p>
+                        <input type="radio" id="solicitud-soporte" name="tipo_ticket" value="soporte" checked>
+                        <label for="solicitud-soporte">Soporte Técnico</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="solicitud-ventas" name="tipo_ticket" value="ventas">
+                        <label for="solicitud-ventas">Cotización de Ventas</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="checkbox" id="boletin" name="suscribir_boletin" value="si">
+                    <label for="boletin">Deseo suscribirme al boletín mensual de actualizaciones tecnológicas.</label>
+                </p>
+
+                <p>
+                    <label for="comentarios">Detalles del Requerimiento:</label><br>
+                    <textarea id="comentarios" name="comentarios_detalle" rows="5" cols="40" placeholder="Escriba aquí los detalles..."></textarea>
+                </p>
+
+                <input type="hidden" name="token_seguridad" value="xyz123abc">
+                
+                <p>
+                    <button type="submit">Enviar Solicitud</button>
+                    <button type="reset">Restablecer Formulario</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2026 TechStore. Todos los derechos reservados.</small></p>
+    </footer>
+
+</body>
+</html>
