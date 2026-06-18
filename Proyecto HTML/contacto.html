@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore Online - Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h1>TechStore</h1></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contacto</h2>
+            <form action="envio.html" method="POST">
+                <p><label>Texto:</label> <input type="text" required placeholder="Nombre"></p>
+                <p><label>Email:</label> <input type="email" required></p>
+                <p><label>Clave:</label> <input type="password"></p>
+                <p><label>Teléfono:</label> <input type="tel"></p>
+                <p><label>Número:</label> <input type="number" min="1" max="10" step="1"></p>
+                <p><label>Fecha:</label> <input type="date"></p>
+                <p><label>Fecha y Hora:</label> <input type="datetime-local"></p>
+                <p><label>Color:</label> <input type="color"></p>
+                <p><label>Rango:</label> <input type="range"></p>
+                <p><label>Archivo:</label> <input type="file" multiple></p>
+                <p><label>URL:</label> <input type="url"></p>
+                <p><label>Checkbox:</label> <input type="checkbox" checked></p>
+                <p><label>Radio:</label> <input type="radio" name="opc" checked></p>
+                <input type="hidden" value="123">
+                
+                <p>
+                    <label>Mensaje:</label><br>
+                    <textarea rows="4"></textarea>
+                </p>
+                
+                <p>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2026 TechStore.</small></p>
+    </footer>
+
+</body>
+</html>
