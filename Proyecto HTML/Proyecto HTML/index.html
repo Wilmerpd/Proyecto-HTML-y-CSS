@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore Online - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>TechStore</h1>
+        </div>
+        <form action="productos.html" method="GET">
+            <input type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
+            <button type="submit">Buscar</button>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-promocional">
+            <figure>
+                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22600%22%20height%3D%22300%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23334155%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2394a3b8%22%20font-family%3D%22sans-serif%22%20font-size%3D%2224%22%3EBanner%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Promoción">
+                <figcaption>Presentamos los nuevos SoundPro X1</figcaption>
+            </figure>
+            <h1>Auriculares Inalámbricos SoundPro X1</h1>
+            <p>Sonido premium, cancelación de ruido y hasta 30 horas de batería.</p>
+            <a href="producto.html"><button type="button">Comprar ahora</button></a>
+        </section>
+
+        <section class="categorias-destacadas">
+            <h2>Categorías Destacadas</h2>
+            <nav>
+                <article>
+                    <h3>Laptops</h3>
+                    <a href="productos.html?cat=laptops">Ver categoría</a>
+                </article>
+                <article>
+                    <h3>Smartphones</h3>
+                    <a href="productos.html?cat=smartphones">Ver categoría</a>
+                </article>
+                <article>
+                    <h3>Accesorios</h3>
+                    <a href="productos.html?cat=accesorios">Ver categoría</a>
+                </article>
+                <article>
+                    <h3>Gaming</h3>
+                    <a href="productos.html?cat=gaming">Ver categoría</a>
+                </article>
+            </nav>
+        </section>
+
+        <section class="productos-destacados">
+            <h2>Productos Destacados</h2>
+            
+            <article class="producto-tarjeta">
+                <header><h3>Smartphone Galaxy A54</h3></header>
+                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22200%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23334155%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2394a3b8%22%20font-family%3D%22sans-serif%22%20font-size%3D%2220%22%3EFoto%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Galaxy A54">
+                <p>Pantalla Super AMOLED.</p>
+                <footer>
+                    <p>Precio: <strong>$409.900</strong></p>
+                    <p>Oferta: <mark>15% OFF</mark></p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header><h3>Lenovo IdeaPad 3</h3></header>
+                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22200%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23334155%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2394a3b8%22%20font-family%3D%22sans-serif%22%20font-size%3D%2220%22%3EFoto%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Lenovo IdeaPad 3">
+                <p>Procesador AMD Ryzen 5.</p>
+                <footer>
+                    <p>Precio: <strong>$699.900</strong></p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header><h3>Sony WH-CH720N</h3></header>
+                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22200%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23334155%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2394a3b8%22%20font-family%3D%22sans-serif%22%20font-size%3D%2220%22%3EFoto%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Auriculares Sony">
+                <p>Cancelación de ruido.</p>
+                <footer>
+                    <p>Precio: <strong>$199.900</strong></p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header><h3>Xiaomi Watch 2</h3></header>
+                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22200%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23334155%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2394a3b8%22%20font-family%3D%22sans-serif%22%20font-size%3D%2220%22%3EFoto%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Xiaomi Watch 2">
+                <p>Monitoreo de salud inteligente.</p>
+                <footer>
+                    <p>Precio: <strong>$159.900</strong></p>
+                    <button type="button" disabled>Agotado</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header><h3>Control Xbox Series</h3></header>
+                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22200%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23334155%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2394a3b8%22%20font-family%3D%22sans-serif%22%20font-size%3D%2220%22%3EFoto%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Control Xbox">
+                <p>Diseño ergonómico.</p>
+                <footer>
+                    <p>Precio: <strong>$74.900</strong></p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header><h3>Echo Dot 5ta Gen</h3></header>
+                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22200%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23334155%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2394a3b8%22%20font-family%3D%22sans-serif%22%20font-size%3D%2220%22%3EFoto%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Echo Dot">
+                <p>Bocina inteligente.</p>
+                <footer>
+                    <p>Precio: <strong>$49.990</strong></p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header><h3>Logitech G Pro</h3></header>
+                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22200%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23334155%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2394a3b8%22%20font-family%3D%22sans-serif%22%20font-size%3D%2220%22%3EFoto%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Logitech G Pro">
+                <p>Teclado mecánico.</p>
+                <footer>
+                    <p>Precio: <strong>$129.900</strong></p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header><h3>Monitor LG 24"</h3></header>
+                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22200%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23334155%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2394a3b8%22%20font-family%3D%22sans-serif%22%20font-size%3D%2220%22%3EFoto%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Monitor LG">
+                <p>Frecuencia de 144Hz.</p>
+                <footer>
+                    <p>Precio: <strong>$249.900</strong></p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p>Email: soporte@techstore.com</p>
+        </address>
+        <p><small>&copy; 2026 TechStore.</small></p>
+    </footer>
+
+</body>
+</html>
