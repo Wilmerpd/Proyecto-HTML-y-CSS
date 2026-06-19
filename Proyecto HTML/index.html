@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore Online - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>TechStore Wilmer</h1>
+        </div>
+        <form action="productos.html" method="GET">
+            <input type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
+            <button type="submit">Buscar</button>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-promocional">
+            <figure>
+            <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=600"
+             alt="SoundPro X1">
+            <figcaption>Presentamos los nuevos SoundPro X1</figcaption>
+            </figure>
+            <h1>Auriculares Inalámbricos SoundPro X1</h1>
+            <p>Sonido premium, cancelación de ruido y hasta 30 horas de batería.</p>
+            <a href="producto.html"><button type="button">Comprar ahora</button></a>
+        </section>
+
+        <section class="categorias-destacadas">
+            <h2>Categorías Destacadas</h2>
+            <nav>
+                <article>
+                    <h3>Laptops</h3>
+                    <a href="productos.html?cat=laptops">Ver categoría</a>
+                </article>
+                <article>
+                    <h3>Smartphones</h3>
+                    <a href="productos.html?cat=smartphones">Ver categoría</a>
+                </article>
+                <article>
+                    <h3>Accesorios</h3>
+                    <a href="productos.html?cat=accesorios">Ver categoría</a>
+                </article>
+                <article>
+                    <h3>Gaming</h3>
+                    <a href="productos.html?cat=gaming">Ver categoría</a>
+                </article>
+            </nav>
+        </section>
+
+        <section class="productos-destacados">
+            <h2>Productos Destacados</h2>
+            
+            <article class="producto-tarjeta">
+                <header><h3>Smartphone Galaxy A54</h3></header>
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600"
+                alt="Samsung Galaxy A54">
+                     <p>Pantalla Super AMOLED.</p>
+                <footer>
+                    <p>Precio: <strong>$409.900</strong></p>
+                    <p>Oferta: <mark>15% OFF</mark></p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header><h3>Lenovo IdeaPad 3</h3></header>
+                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600"
+                alt="Laptop Gamer ASUS">
+                <p>Procesador AMD Ryzen 5.</p>
+                <footer>
+                    <p>Precio: <strong>$699.900</strong></p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header><h3>Sony WH-CH720N</h3></header>
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
+                alt="Sony WH-CH720N">
+                <p>Cancelación de ruido.</p>
+                <footer>
+                    <p>Precio: <strong>$199.900</strong></p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header><h3>Xiaomi Watch 2</h3></header>
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=600"
+                alt="Xiaomi Watch 2">
+                <p>Monitoreo de salud inteligente.</p>
+                <footer>
+                    <p>Precio: <strong>$159.900</strong></p>
+                    <button type="button" disabled>Agotado</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header><h3>Control Xbox Series</h3></header>
+                <img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=600"
+                alt="Control Xbox Series"> 
+                <p>Diseño ergonómico.</p>
+                <footer>
+                    <p>Precio: <strong>$74.900</strong></p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header><h3>Echo Dot 5ta Gen</h3></header>
+                <img src="https://images.unsplash.com/photo-1543512214-318c7553f230?w=600"
+                alt="Echo Dot 5ta Generación">
+                <p>Bocina inteligente.</p>
+                <footer>
+                    <p>Precio: <strong>$49.990</strong></p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header><h3>Logitech G Pro</h3></header>
+                <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=600"
+                alt="Logitech G Pro">
+                <p>Teclado mecánico.</p>
+                <footer>
+                    <p>Precio: <strong>$129.900</strong></p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+
+            <article class="producto-tarjeta">
+                <header><h3>Monitor LG 24"</h3></header>
+                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600"
+                alt="Monitor LG 24">
+                <p>Frecuencia de 144Hz.</p>
+                <footer>
+                    <p>Precio: <strong>$249.900</strong></p>
+                    <button type="button">Agregar al carrito</button>
+                </footer>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p>Email: soporte@techstore.com</p>
+        </address>
+        <p><small>&copy; 2026 TechStore.</small></p>
+    </footer>
+
+</body>
+</html>

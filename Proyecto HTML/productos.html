@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore Online - Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h1>TechStore</h1></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Filtros</h2>
+            <form action="productos.html" method="GET">
+                <fieldset>
+                    <legend>Búsqueda</legend>
+                    <p>
+                        <label for="f-precio">Precio:</label>
+                        <input type="range" id="f-precio" name="precio" min="0" max="2000000">
+                    </p>
+                    <p>
+                        <label for="f-marca">Marca:</label>
+                        <input type="text" id="f-marca" name="marca" list="marcas">
+                        <datalist id="marcas">
+                            <option value="Sony"></option>
+                            <option value="Samsung"></option>
+                        </datalist>
+                    </p>
+                    <p>
+                        <label for="f-cat">Categoría:</label>
+                        <select id="f-cat" name="cat">
+                            <option value="laptops">Laptops</option>
+                            <option value="smartphones">Smartphones</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="f-color">Color:</label>
+                        <input type="color" id="f-color" name="color">
+                    </p>
+                    <button type="submit">Filtrar</button>
+                    <button type="reset">Limpiar</button>
+                </fieldset>
+            </form>
+        </aside>
+
+        <section>
+            <h2>Resultados</h2>
+            <article class="producto-tarjeta">
+                <header><h3>Sony WH-CH720N</h3></header>
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
+                alt="Sony WH-CH720N">
+                <p>Precio: <strong>$199.900</strong></p>
+                <a href="producto.html"><button type="button">Ver detalles</button></a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2026 TechStore.</small></p>
+    </footer>
+
+</body>
+</html>
